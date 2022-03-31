@@ -1,0 +1,16 @@
+rules:
+  check-path-values-one:
+    given: $.paths
+    then:
+      field: @key
+      # ...
+  check-path-values-two:
+    given: $.paths.*~
+    then:
+      # no field needed
+      # ...
+  check-path-values-three:
+    given: $.paths[*]~
+    then:
+      # no field needed
+      # ...
