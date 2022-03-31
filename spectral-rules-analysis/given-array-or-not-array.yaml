@@ -1,0 +1,6 @@
+rules:
+  target-request-body:
+    given:
+      - "$.paths.*.post[requestBody].content"
+      - "$.paths.*.post.requestBody.content"
+    # ...
