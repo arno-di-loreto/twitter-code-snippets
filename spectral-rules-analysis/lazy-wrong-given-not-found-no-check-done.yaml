@@ -1,0 +1,6 @@
+rules:
+  openapi-v3-responses-examples:
+    description: Ensuring all responses have examples defined.
+    given: "$..responses..[?(@property !== 'properties' && @.examples)]"
+    then:
+      # ...
